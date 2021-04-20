@@ -8,6 +8,7 @@ const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const pug = require('gulp-pug');
 const del = require('del');
+const ghPages = require('gh-pages');
 
 // Таск для сборки Gulp файлов
 gulp.task('pug', function(callback) {
@@ -88,10 +89,11 @@ gulp.task('watch', function() {
 
 //Задача для отправки на github-pages
 
-gulp.task('deploy', function(cb) {
-	ghPages.publish(path.join(process.cwd(), "./build")), 
-	(cb);
-});
+function deploy(cb) {
+	ghPages.publish(path.join(process.cwd(), "./build"), cb);
+ }
+
+exports.deploy = deploy;
 
 // Задача для старта сервера из папки app
 gulp.task('server', function() {

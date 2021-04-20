@@ -6,7 +6,7 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Danvarius/WebsitePug"
-	 },
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -24,5 +24,8 @@
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-watch": "^5.0.1"
+	},
+	"devDependencies": {
+		"gh-pages": "^3.1.0"
 	}
 }
