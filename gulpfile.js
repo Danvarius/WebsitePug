@@ -9,6 +9,7 @@ const plumber = require('gulp-plumber');
 const pug = require('gulp-pug');
 const del = require('del');
 const ghPages = require('gh-pages');
+const path = require('path');
 
 // Таск для сборки Gulp файлов
 gulp.task('pug', function(callback) {
