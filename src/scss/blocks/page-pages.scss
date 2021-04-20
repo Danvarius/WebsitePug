@@ -1,0 +1,35 @@
+.page-pages {
+   display: flex;
+   width: 800px;
+   padding: 20px 0;
+
+   .page-pages__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 60px;
+      margin: 0 250px 0 370px;
+
+      .page-pages__link {
+         display: block;
+         
+         font-family: "Arial", sans-serif;
+         font-weight: 700;
+         text-decoration: none;
+         color: #000000;
+      }
+
+      .page-pages__link--red {
+         color: red;
+      }
+   }
+
+   .page-pages__next-link {
+      display: block;
+
+      font-family: "Arial", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+   }
+}

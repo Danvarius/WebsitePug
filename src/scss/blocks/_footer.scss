@@ -1,0 +1,41 @@
+.page-footer {
+   width: 100%;
+   padding-top: 40px;
+
+   background-color: #dde2e7;
+
+   .page-footer__wrapper {
+      display: flex;
+      width: 1100px;
+      margin: 0 auto 40px auto;
+   }
+
+   .page-footer__box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 40px;
+      justify-content: space-between;
+      width: 710px;
+
+      .page-footer__link {
+         display: block;
+         width: 236px;
+         margin-bottom: 25px;
+         font-family: "Arial", sans-serif;
+         color: #8e9399;
+         text-decoration: none;
+      }
+   }
+
+   .page-footer__copyright {
+      width: 100%;
+      padding: 10px 0;
+
+      font-family: "Arial", sans-serif;
+      font-size: 14px;
+      text-align: center;
+      color: #b7babe;
+      
+      background-color: #e8ebee;
+   }
+}

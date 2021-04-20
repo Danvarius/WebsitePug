@@ -1,0 +1,19 @@
+mixin article(title, subtitle, img, text, link, social)
+
+   article.news 
+      h2.news__title #{title}
+      span.news__subtitle #{subtitle}
+      img.news__img(src="img/" + img, alt="")
+      p.news__text #{text}
+      .news__box
+         a.news__link(href="#") #{link}
+         .news__wrapper-link 
+            a.news__link-social(href="#")
+               img.news__img-social(src="img/whatsapp.svg", alt="" width="20" height="20")
+            a.news__link-social(href="#")
+               img.news__img-social(src="img/instagram.svg", alt="" width="20" height="20")
+            a.news__link-social(href="#")
+               img.news__img-social(src="img/twitter.svg", alt="" width="20" height="20")
+            a.news__link-social(href="#")
+               img.news__img-social(src="img/facebook-f.svg", alt="" width="20" height="20")                 
+
